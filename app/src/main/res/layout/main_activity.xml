@@ -4,9 +4,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <pramonow.com.draggablebutton.DraggableButton
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+    <com.pramonow.draggablebuttonmodule.DraggableButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/draggable_button"/>
 
 </LinearLayout>

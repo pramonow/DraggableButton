@@ -1,4 +1,4 @@
-package pramonow.com.draggablebutton
+package com.pramonow.draggablebuttonmodule
 
 import android.content.Context
 import android.util.AttributeSet
@@ -8,7 +8,7 @@ import android.widget.Button
 
 class DraggableButton: Button{
 
-    public var sensitivity = 20;
+    var sensitivity = 10;
 
     constructor(context: Context, attributeSet: AttributeSet) : super(context,attributeSet) {
 
@@ -22,7 +22,6 @@ class DraggableButton: Button{
             if (gestureDetector!!.onTouchEvent(motionEvent)) {
                 // single tap
                 performClick()
-
                 true
             }
             else if(motionEvent.action == MotionEvent.ACTION_DOWN) {
@@ -37,7 +36,7 @@ class DraggableButton: Button{
                 //sensitivity
                 if(Math.abs(x1+y1-x-y) > sensitivity) {
 
-                    view.y = motionEvent.rawY - view.height
+                    view.y = motionEvent.rawY - view.height * 2
                     view.x = motionEvent.rawX - view.width / 2
                 }
 

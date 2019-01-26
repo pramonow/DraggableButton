@@ -10,11 +10,13 @@ import android.widget.ImageView
 import android.view.GestureDetector
 import android.view.GestureDetector.SimpleOnGestureListener
 import android.widget.ImageButton
+import android.widget.Toast
+import com.pramonow.draggablebuttonmodule.DraggableButton
 
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var img:DraggableButton
+    lateinit var img: DraggableButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
