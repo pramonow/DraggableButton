@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
 
         draggableButton = findViewById(R.id.draggable_button)
-        draggableButton.setOnClickListener { Toast.makeText(this,"CLICK",Toast.LENGTH_SHORT).show() }
+        draggableButton.setOnTapListener { Toast.makeText(this,"CLICK",Toast.LENGTH_SHORT).show() }
         draggableButton.setText("Button")
 
         //sensitivity can be set here, by default it is 10
