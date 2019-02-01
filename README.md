@@ -2,7 +2,7 @@
 
 Providing android draggable button component the easy way.
 
-<img src="https://github.com/pramonow/just_images/blob/master/DraggableButton.gif" width="180"> 
+<img src="https://github.com/pramonow/android-draggableButton/blob/master/screenshoot.gif" width="180"> 
 
 	allprojects {
 		repositories {
